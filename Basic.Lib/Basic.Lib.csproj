@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>tpt</Authors>
+    <Description>基础项目,公共组件</Description>
+    <LangVersion>7.1</LangVersion>
+    <Version>1.0.6</Version>
+    <PackageReleaseNotes>版本兼容</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Api\WebApiHelper.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Core.Lib" Version="1.0.4" />
+    <PackageReference Include="Feng.Tracing" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.1.1" />
+    <PackageReference Include="Redis.Lib" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>
